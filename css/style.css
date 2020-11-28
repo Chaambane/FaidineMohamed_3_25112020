@@ -26,7 +26,7 @@ main {
   margin: 1rem;
 }
 .header a {
-  margin-left: 1%;
+  margin-left: 1px;
   font-size: 2rem;
   color: black;
 }

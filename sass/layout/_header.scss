@@ -1,0 +1,27 @@
+
+/*HEADER GENERALE*/
+.header-logo{
+    display: block;
+    margin: 20px auto 12px auto;
+}
+
+/*HEADER PAGES RESTAURANTS(MENU)*/
+.header{
+    display: flex;
+    margin: 1rem;
+    a{
+        margin-left: 1%;
+        font-size: 2rem;
+        color: black;
+    }
+    &__logo{
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+    }
+}
+.image-restaurant{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}

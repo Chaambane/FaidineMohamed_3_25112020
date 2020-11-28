@@ -1,0 +1,46 @@
+/*SECTION PRESENTATION*/
+.presentation{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    &__geolocation{
+        width: 100%;
+        background-color: $clr-grey;
+        box-shadow: inset 1px 2px 2px 0 rgb(180, 180, 180);
+        display: flex;
+        justify-content: center;
+        i{
+            padding: 1.2rem;
+        }
+        p{
+            font-family: $text-font-family;
+            font-size: 1.2rem;
+        }
+    }
+    &__description{
+        width: 100%;
+        background-color: hsl(0°, 0%, 95%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        h1{
+            width: 80%;
+            font-size: 2.1rem;
+            font-family: $text-font-family;
+            margin-bottom: 1rem;
+        }
+        h2{
+            width: 90%;
+            margin-top: 0;
+            font-size: 1.7rem;
+            font-weight: initial;
+            color: hsl(0°, 0%, 55%);
+        }
+        button {
+         @include button;
+        }
+    }
+}

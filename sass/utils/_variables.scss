@@ -1,0 +1,28 @@
+/*VARIABLES*/
+$clr-primary: #9356DC;
+$clr-secondary: #FF79DA;
+$clr-tertiary: #99E2D0;
+$clr-grey: hsl(0°, 0%, 90%);
+
+$title-font-family: 'Shrikhand', sans-serif;
+$text-font-family: 'Roboto', sans-serif;
+
+/*MIXIN*/
+@mixin button {
+    width: 220px;
+    height: 55px;
+    margin: 20px 0 50px 0;
+    border-radius: 100rem;
+    border: none;
+    background: linear-gradient($clr-secondary, $clr-primary);
+    box-shadow: 5px 5px 5px hsl(0°, 0%, 90%);
+    font-size: 1rem;
+    font-style: initial;;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    &:hover{
+        opacity: 0.8;
+        box-shadow: 5px 5px 5px hsl(0°, 0%, 70%);
+    }
+}

@@ -1,0 +1,61 @@
+
+// SECTION FONCTIONNEMENT
+.operation{
+    width: 100%;
+    h3{
+        margin: 3rem 0 2rem 1rem;
+        font-size: 2rem;
+        font-family: $text-font-family;
+    }
+    &__box-menu{
+        display: flex;
+        justify-content: space-evenly;
+        @media screen and (max-width: 780px){
+            flex-wrap: wrap;
+        }
+        &__card{
+            display: flex;
+            width: 250px;
+            height: 20px;
+            margin: 0;
+            background-color: hsl(0°, 0%, 92%);
+            padding: 1.5rem;
+            border-radius: 1.5rem;
+            box-shadow: 5px 5px 5px hsl(0°, 0%, 85%);
+            align-items: center;
+            cursor: pointer;
+            &:hover{
+                background-color: hsl(267°, 66%, 95%);
+                i {
+                    color: $clr-primary;
+                }
+            }
+            @media screen and (max-width: 930px){
+                width: 200px;
+            }
+            @media screen and (max-width: 780px){
+                text-align: center;
+                width: 80%;
+                margin: 0.5rem;
+            }
+            p:first-child{
+                position: relative;
+                left: -1.8rem;
+                background-color: $clr-primary;
+                border-radius: 100%;
+                padding: 0.2rem 0.5rem;
+                color: #fff;
+            }
+            i {
+                padding-right: 1.5rem;
+                color: hsl(0°, 0%, 60%);        
+            }
+            p:last-child{
+                font-family: $text-font-family;
+                margin-right: 1.2rem;
+                font-size: 0.9rem;
+                font-weight: lighter;
+            }
+        }   
+    }
+}

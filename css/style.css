@@ -104,4 +104,70 @@ main {
   box-shadow: 5px 5px 5px #b3b3b3;
 }
 
+.operation {
+  width: 100%;
+}
+.operation h3 {
+  margin: 3rem 0 2rem 1rem;
+  font-size: 2rem;
+  font-family: "Roboto", sans-serif;
+}
+.operation__box-menu {
+  display: flex;
+  justify-content: space-evenly;
+}
+@media screen and (max-width: 780px) {
+  .operation__box-menu {
+    flex-wrap: wrap;
+  }
+}
+.operation__box-menu__card {
+  display: flex;
+  width: 250px;
+  height: 20px;
+  margin: 0;
+  background-color: #ebebeb;
+  padding: 1.5rem;
+  border-radius: 1.5rem;
+  box-shadow: 5px 5px 5px #d9d9d9;
+  align-items: center;
+  cursor: pointer;
+}
+.operation__box-menu__card:hover {
+  background-color: #f1eafb;
+}
+.operation__box-menu__card:hover i {
+  color: #9356DC;
+}
+@media screen and (max-width: 930px) {
+  .operation__box-menu__card {
+    width: 200px;
+  }
+}
+@media screen and (max-width: 780px) {
+  .operation__box-menu__card {
+    text-align: center;
+    width: 80%;
+    margin: 0.5rem;
+  }
+}
+.operation__box-menu__card p:first-child {
+  position: relative;
+  left: -1.8rem;
+  background-color: #9356DC;
+  border-radius: 100%;
+  padding: 0.2rem 0.5rem;
+  color: #fff;
+}
+.operation__box-menu__card i {
+  padding-right: 1.5rem;
+  color: #999999;
+}
+.operation__box-menu__card p:last-child {
+  font-family: "Roboto", sans-serif;
+  margin-right: 1.2rem;
+  font-size: 0.9rem;
+  font-weight: lighter;
+}
+
 /*# sourceMappingURL=style.css.map */

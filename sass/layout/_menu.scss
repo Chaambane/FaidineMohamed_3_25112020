@@ -62,12 +62,37 @@
                 padding: 0.7rem;
                 box-shadow: 5px 5px 5px hsl(0°, 0%, 82%);
                 animation: load-menu 1s 2s both;
+                // Animation item check hover
+                &:hover{
+                    & :nth-child(1){
+                        margin-right: 1.8rem;
+                        transition: margin-right 1s;
+                    }
+                    & :nth-child(2){
+                        width:50%;
+                        transition: width 1s;
+                    }
+                    & :nth-child(3){
+                        margin-right: 3.7rem;
+                        transition: margin-right 1s;
+                    }
+                    & :nth-child(4){
+                        right: 0;
+                        opacity: 1;
+                        transition: right 1s;
+                    }
+                    & .checkIcon{
+                        transform: rotate(360deg);
+                        transition: transform 1s;
+                    }
+                }
                 & :nth-child(1){
                     flex: 1 100%;
                     font-size: 1.1rem;
                     font-weight: bold;
                     text-overflow: ellipsis;
                     white-space: nowrap;
+                    overflow: hidden;
                     margin-right: 0;
                     margin-top: 0;
                 }
@@ -77,6 +102,7 @@
                     font-size: 1rem;
                     text-overflow: ellipsis;
                     white-space: nowrap;
+                    overflow: hidden;
                     color: hsl(0°, 0%, 35%);
                     margin-top: -0.5rem;
                 }
@@ -93,7 +119,7 @@
                     transform: rotate(0);
                 }
                 &--validation{
-                    opacity: 1;
+                    opacity: 0;
                     height: 90px;
                     width: 50px;
                     background-color: $clr-tertiary;

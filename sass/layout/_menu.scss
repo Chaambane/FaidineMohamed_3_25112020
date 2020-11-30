@@ -30,11 +30,11 @@
         justify-content: space-around;
         flex-wrap: wrap;
         width: 100%;
+        font-family: $text-font-family;
         &__sub-menu{
             height: auto;
             justify-content: space-evenly;
             h3{
-                font-family: $text-font-family;
                 font-weight: lighter;
                 margin-left: 1rem;
                 color: hsl(0°, 0%, 35%);
@@ -50,32 +50,58 @@
             &__item{
                 background-color: #fff;
                 display: flex;
-                flex-direction: column;
+                flex-flow: row wrap;
                 justify-content: space-between;
+                align-items: flex-start;
+                position: relative;
+                overflow: hidden;
                 border-radius: 1rem;
                 width: 350px;
-                height: 70px;
+                height: 55px;
                 margin: 1rem;
-                padding: 0.5rem;
+                padding: 0.7rem;
                 box-shadow: 5px 5px 5px hsl(0°, 0%, 82%);
-                p:first-child{
-                    font-size: 1.2rem;
+                & :nth-child(1){
+                    flex: 1 100%;
+                    font-size: 1.1rem;
                     font-weight: bold;
-                    margin: 0.8rem 0 0.2rem 0.4rem;
-                    font-family: $text-font-family;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    margin-right: 0;
+                    margin-top: 0;
                 }
-                p:last-child{
-                    position: relative;
-                    margin-left: 0.4rem;
-                    margin-right: 0.4rem;
-                    bottom: 1rem;
-                    display: flex;
-                    flex-direction: row;
-                    justify-content: space-between;
+                & :nth-child(2){
+                    width: 80%;
                     font-family: $text-font-family;
+                    font-size: 1rem;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
                     color: hsl(0°, 0%, 35%);
+                    margin-top: -0.5rem;
                 }
-                @media screen and (min-width:600px) and (max-width:1230px){
+                & h4{
+                    margin-top: -0.5rem;
+                    color: hsl(0°, 0%, 33%);
+                }
+                & .checkIcon{
+                    margin-top: 80%;
+                    border-radius: 50%;
+                    color: $clr-tertiary;
+                    background-color: #fff;
+                    font-size: 1.5rem;
+                    transform: rotate(0);
+                }
+                &--validation{
+                    opacity: 1;
+                    height: 90px;
+                    width: 50px;
+                    background-color: $clr-tertiary;
+                    position: absolute;
+                    right: -4rem;
+                    bottom: 0;
+                    padding-left: 1.1rem;
+                }
+                @media screen and (min-width:600px) and (max-width:1250px){
                     width: 600px;
                 }
                 @media screen and (min-width:270px) and (max-width:374px){

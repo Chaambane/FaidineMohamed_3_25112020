@@ -317,13 +317,13 @@ main {
   justify-content: space-around;
   flex-wrap: wrap;
   width: 100%;
+  font-family: "Roboto", sans-serif;
 }
 .menu__box__sub-menu {
   height: auto;
   justify-content: space-evenly;
 }
 .menu__box__sub-menu h3 {
-  font-family: "Roboto", sans-serif;
   font-weight: lighter;
   margin-left: 1rem;
   color: #595959;
@@ -339,33 +339,59 @@ main {
 .menu__box__sub-menu__item {
   background-color: #fff;
   display: flex;
-  flex-direction: column;
+  flex-flow: row wrap;
   justify-content: space-between;
+  align-items: flex-start;
+  position: relative;
+  overflow: hidden;
   border-radius: 1rem;
   width: 350px;
-  height: 70px;
+  height: 55px;
   margin: 1rem;
-  padding: 0.5rem;
+  padding: 0.7rem;
   box-shadow: 5px 5px 5px #d1d1d1;
 }
-.menu__box__sub-menu__item p:first-child {
-  font-size: 1.2rem;
+.menu__box__sub-menu__item :nth-child(1) {
+  flex: 1 100%;
+  font-size: 1.1rem;
   font-weight: bold;
-  margin: 0.8rem 0 0.2rem 0.4rem;
-  font-family: "Roboto", sans-serif;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-right: 0;
+  margin-top: 0;
 }
-.menu__box__sub-menu__item p:last-child {
-  position: relative;
-  margin-left: 0.4rem;
-  margin-right: 0.4rem;
-  bottom: 1rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+.menu__box__sub-menu__item :nth-child(2) {
+  width: 80%;
   font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  text-overflow: ellipsis;
+  white-space: nowrap;
   color: #595959;
+  margin-top: -0.5rem;
 }
-@media screen and (min-width: 600px) and (max-width: 1230px) {
+.menu__box__sub-menu__item h4 {
+  margin-top: -0.5rem;
+  color: #545454;
+}
+.menu__box__sub-menu__item .checkIcon {
+  margin-top: 80%;
+  border-radius: 50%;
+  color: #99E2D0;
+  background-color: #fff;
+  font-size: 1.5rem;
+  transform: rotate(0);
+}
+.menu__box__sub-menu__item--validation {
+  opacity: 1;
+  height: 90px;
+  width: 50px;
+  background-color: #99E2D0;
+  position: absolute;
+  right: -4rem;
+  bottom: 0;
+  padding-left: 1.1rem;
+}
+@media screen and (min-width: 600px) and (max-width: 1250px) {
   .menu__box__sub-menu__item {
     width: 600px;
   }

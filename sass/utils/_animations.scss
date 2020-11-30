@@ -1,0 +1,11 @@
+
+@keyframes heart{
+    0%{
+        background: linear-gradient(white, white);
+        -webkit-background-clip: text;
+    }100%{
+        -webkit-text-stroke: 0 #fff;
+        background: linear-gradient($clr-secondary, $clr-primary);
+        -webkit-background-clip: text;
+    }
+}

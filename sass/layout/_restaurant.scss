@@ -67,6 +67,12 @@
                     right: 1.5rem;
                     bottom: 2rem;
                     font-size: 1.5rem;
+                    -webkit-text-stroke: 2px black;
+                    -webkit-text-fill-color: transparent;
+                    &:hover{
+                        animation: heart 2000ms;
+                        animation-fill-mode: forwards;
+                    }
                 }
             }
         }

@@ -13,6 +13,14 @@
         background-color: $clr-grey;
         font-family: $title-font-family;
         font-size: 1.8rem;
+        & i{
+            -webkit-text-stroke: 2px black;
+            -webkit-text-fill-color: transparent;
+            &:hover{
+                animation: heart 2000ms;
+                animation-fill-mode: forwards;
+            }
+        }
     }
     @media screen and (max-width:470px){
         font-size: 1rem;

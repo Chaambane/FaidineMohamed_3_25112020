@@ -242,6 +242,12 @@ main {
   right: 1.5rem;
   bottom: 2rem;
   font-size: 1.5rem;
+  -webkit-text-stroke: 2px black;
+  -webkit-text-fill-color: transparent;
+}
+.restaurants__box__card__info i:hover {
+  animation: heart 2000ms;
+  animation-fill-mode: forwards;
 }
 
 /*FOOTER*/
@@ -292,6 +298,14 @@ main {
   background-color: #e6e6e6;
   font-family: "Shrikhand", sans-serif;
   font-size: 1.8rem;
+}
+.menu__h2 i {
+  -webkit-text-stroke: 2px black;
+  -webkit-text-fill-color: transparent;
+}
+.menu__h2 i:hover {
+  animation: heart 2000ms;
+  animation-fill-mode: forwards;
 }
 @media screen and (max-width: 470px) {
   .menu {
@@ -381,6 +395,18 @@ main {
 .menu__validation button:hover {
   opacity: 0.8;
   box-shadow: 5px 5px 5px #b3b3b3;
+}
+
+@keyframes heart {
+  0% {
+    background: linear-gradient(white, white);
+    -webkit-background-clip: text;
+  }
+  100% {
+    -webkit-text-stroke: 0 #fff;
+    background: linear-gradient(#FF79DA, #9356DC);
+    -webkit-background-clip: text;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

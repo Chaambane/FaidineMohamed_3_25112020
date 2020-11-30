@@ -61,6 +61,7 @@
                 margin: 1rem;
                 padding: 0.7rem;
                 box-shadow: 5px 5px 5px hsl(0°, 0%, 82%);
+                animation: load-menu 1s 2s both;
                 & :nth-child(1){
                     flex: 1 100%;
                     font-size: 1.1rem;

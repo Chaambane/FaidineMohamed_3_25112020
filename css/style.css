@@ -350,6 +350,7 @@ main {
   margin: 1rem;
   padding: 0.7rem;
   box-shadow: 5px 5px 5px #d1d1d1;
+  animation: load-menu 1s 2s both;
 }
 .menu__box__sub-menu__item :nth-child(1) {
   flex: 1 100%;
@@ -432,6 +433,18 @@ main {
     -webkit-text-stroke: 0 #fff;
     background: linear-gradient(#FF79DA, #9356DC);
     -webkit-background-clip: text;
+  }
+}
+@keyframes load-menu {
+  0% {
+    opacity: 0;
+    transform: scaleY(0);
+    transform-origin: 100% 0;
+  }
+  100% {
+    opacity: 1;
+    transform: scaleY(1);
+    transform-origin: 100% 0;
   }
 }
 

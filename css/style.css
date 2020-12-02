@@ -272,11 +272,22 @@ main {
   align-items: center;
   background-color: #383838;
 }
+@media screen and (min-width: 270px) and (max-width: 480px) {
+  .footer {
+    align-items: flex-start;
+  }
+}
 .footer h4 {
   font-family: "Shrikhand", sans-serif;
   color: #fff;
   margin: 1rem 0 0 1rem;
   font-size: 2rem;
+}
+@media screen and (min-width: 270px) and (max-width: 480px) {
+  .footer h4 {
+    font-size: 1.2rem;
+    padding-left: 1.7rem;
+  }
 }
 .footer__ul {
   list-style-type: none;

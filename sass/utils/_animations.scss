@@ -3,21 +3,23 @@
     0%{
         transform : rotate(0deg);
         opacity: 1;
+        background: $clr-grey;
+        border-top: 1.2rem solid $clr-primary;
     }
     25%{
         transform: rotate(180deg);
-        background:  $clr-tertiary;
-        opacity: 0.8;
+        border-top: 1.2rem solid $clr-tertiary;
+        opacity: 1;
     }
     50%{
-        transform: rotate(-180deg);
-        background: salmon;
-        opacity: 0.6;
+        transform: rotate(-150deg);
+        border-top: 1.2rem solid yellow;
+        opacity: 1;
     }
     75%{
-        transform: rotate(-230deg);
-        background: $clr-secondary;
-        opacity: 0.4;
+        transform: rotate(200deg);
+        border-top: 1.2rem solid $clr-secondary;
+        opacity: 0.5;
     }
     100%{
         transform: rotate(360deg);

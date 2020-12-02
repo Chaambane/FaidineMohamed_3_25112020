@@ -1,15 +1,14 @@
 .page-load {
-    border: 16px solid #f3f3f3;
-    border-top: 1.2rem solid $clr-primary;
-    border-radius: 50%;
+    border: 1.2rem solid #f3f3f3;
+    border-radius: 100%;
     position: absolute;
-    width: 60px;
-    height: 60px;
+    width: 80px;
+    height: 80px;
     left: 50%;
     margin-left: -40px;
     animation: rotate 3s linear;
     animation-fill-mode: forwards;
     &~div{
-        animation: load-menu 2000ms 2000ms both;
+        animation: load-menu 2200ms 3000ms both;
     }
 }

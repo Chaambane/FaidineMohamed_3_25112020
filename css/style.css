@@ -15,19 +15,18 @@ main {
 }
 
 .page-load {
-  border: 16px solid #f3f3f3;
-  border-top: 1.2rem solid #9356DC;
-  border-radius: 50%;
+  border: 1.2rem solid #f3f3f3;
+  border-radius: 100%;
   position: absolute;
-  width: 60px;
-  height: 60px;
+  width: 80px;
+  height: 80px;
   left: 50%;
   margin-left: -40px;
   animation: rotate 3s linear;
   animation-fill-mode: forwards;
 }
 .page-load ~ div {
-  animation: load-menu 2000ms 2000ms both;
+  animation: load-menu 2200ms 3000ms both;
 }
 
 /*HEADER GENERALE*/
@@ -468,21 +467,23 @@ main {
   0% {
     transform: rotate(0deg);
     opacity: 1;
+    background: #e6e6e6;
+    border-top: 1.2rem solid #9356DC;
   }
   25% {
     transform: rotate(180deg);
-    background: #99E2D0;
-    opacity: 0.8;
+    border-top: 1.2rem solid #99E2D0;
+    opacity: 1;
   }
   50% {
-    transform: rotate(-180deg);
-    background: salmon;
-    opacity: 0.6;
+    transform: rotate(-150deg);
+    border-top: 1.2rem solid yellow;
+    opacity: 1;
   }
   75% {
-    transform: rotate(-230deg);
-    background: #FF79DA;
-    opacity: 0.4;
+    transform: rotate(200deg);
+    border-top: 1.2rem solid #FF79DA;
+    opacity: 0.5;
   }
   100% {
     transform: rotate(360deg);

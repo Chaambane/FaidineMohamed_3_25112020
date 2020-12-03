@@ -11,10 +11,11 @@
         font-family: $text-font-family;
     }
     &__box{
-        width: 100%;
+        width: 95%;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
+        align-items: center;
         &__card{
             cursor: pointer;
             position: relative;
@@ -22,7 +23,7 @@
             background-color: #fff;
             border-radius: 1.5rem;
             text-decoration: none;
-            width: 440px;
+            width: 450px;
             height: 300px;
             box-shadow: 5px 5px 5px hsl(0°, 0%, 85%);
             span{

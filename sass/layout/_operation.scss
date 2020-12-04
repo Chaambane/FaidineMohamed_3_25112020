@@ -5,7 +5,7 @@
     h3{
         margin: 3rem 0 2rem 1rem;
         font-size: 2rem;
-        font-family: $text-font-family;
+        font-family: 'roboto';
     }
     &__box-menu{
         display: flex;
@@ -47,7 +47,7 @@
                 color: hsl(0°, 0%, 60%);        
             }
             p:last-child{
-                font-family: $text-font-family;
+                font-family: 'roboto';
                 font-weight: bold;
                 margin-right: 1.2rem;
                 font-size: 0.9rem;

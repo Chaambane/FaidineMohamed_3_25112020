@@ -382,7 +382,7 @@ main {
   animation: load-menu 1s 2s both;
 }
 .menu__box__sub-menu__item:hover :nth-child(1) {
-  margin-right: 1.8rem;
+  margin-right: 8rem;
   transition: margin-right 1s;
 }
 .menu__box__sub-menu__item:hover :nth-child(2) {

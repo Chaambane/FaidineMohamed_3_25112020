@@ -1,14 +1,19 @@
-.page-load {
-    border: 1.2rem solid #f3f3f3;
-    border-radius: 100%;
-    position: absolute;
-    width: 80px;
-    height: 80px;
-    left: 50%;
-    margin-left: -40px;
-    animation: rotate 3s linear;
-    animation-fill-mode: forwards;
-    &~div{
-        animation: load-menu 2600ms 3000ms both;
+.page{
+    position:absolute;
+    top:50%;
+    left:50%;
+    &__load {
+        border: 1.2rem solid #f3f3f3;
+        border-radius: 100%;
+        position: absolute;
+        width: 80px;
+        height: 80px;
+        left: 50%;
+        margin-left: -40px;
+        animation: rotate 3s linear;
+        animation-fill-mode: forwards;
+    }
+    &~main{
+        animation: load-menu 3200ms 3000ms both;
     }
 }

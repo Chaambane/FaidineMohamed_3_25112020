@@ -23,7 +23,12 @@ main {
   overflow: hidden;
 }
 
-.page-load {
+.page {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+.page__load {
   border: 1.2rem solid #f3f3f3;
   border-radius: 100%;
   position: absolute;
@@ -34,8 +39,8 @@ main {
   animation: rotate 3s linear;
   animation-fill-mode: forwards;
 }
-.page-load ~ div {
-  animation: load-menu 2600ms 3000ms both;
+.page ~ main {
+  animation: load-menu 3200ms 3000ms both;
 }
 
 /*HEADER GENERALE*/

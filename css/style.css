@@ -2,12 +2,12 @@
 /*MIXIN*/
 @font-face {
   font-family: "shrikhand";
-  src: url("../police/Shrikhand/Shrikhand-Regular.ttf");
+  src: url("../../police/Shrikhand/Shrikhand-Regular.ttf");
 }
 @font-face {
   font-family: "roboto";
-  src: url("../police/Roboto/Roboto-Regular.ttf");
-  src: url("../police/Roboto/Roboto-Bold.ttf");
+  src: url("../../police/Roboto/Roboto-Regular.ttf");
+  src: url("../../police/Roboto/Roboto-Bold.ttf");
 }
 /*BODY*/
 body {
@@ -40,7 +40,7 @@ main {
   animation-fill-mode: forwards;
 }
 .page ~ main {
-  animation: load-menu 3200ms 3000ms both;
+  animation: load-menu 3000ms 2300ms both;
 }
 
 /*HEADER GENERALE*/

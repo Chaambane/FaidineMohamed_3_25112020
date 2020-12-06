@@ -37,6 +37,7 @@
                 border-radius: 0.2rem;
                 font-size: 1.2rem;
                 font-weight: bolder;
+                font-family: 'roboto';
             }
             img{
                 z-index: 2;
@@ -51,16 +52,18 @@
                 border-bottom-right-radius: 1.5rem;
                 color: black;
                 margin: 0;
+                font-family: 'roboto';
                 div{
                     padding-left: 0.8rem;
                     p:first-child{
+                        font-size: 1.3rem;
                         margin-top: 0.5rem;
                         font-weight: bold;
-                        font-size: 1.2rem;
                     }
                     p:last-child{
                         margin-top: -1rem;
                         font-size: 1.1rem;
+                        font-weight: normal;
                     }
                 }
                 i {

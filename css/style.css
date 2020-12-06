@@ -8,6 +8,7 @@
   font-family: "roboto";
   src: url("../police/Roboto/Roboto-Regular.ttf");
   src: url("../police/Roboto/Roboto-Bold.ttf");
+  src: url("../police/Roboto/Roboto-Regular.ttf");
 }
 /*BODY*/
 body {
@@ -191,7 +192,6 @@ main {
   font-weight: bold;
   margin-right: 1.2rem;
   font-size: 0.9rem;
-  font-weight: lighter;
 }
 
 .restaurants {
@@ -235,6 +235,7 @@ main {
   border-radius: 0.2rem;
   font-size: 1.2rem;
   font-weight: bolder;
+  font-family: "roboto";
 }
 .restaurants__box__card img {
   z-index: 2;
@@ -249,18 +250,20 @@ main {
   border-bottom-right-radius: 1.5rem;
   color: black;
   margin: 0;
+  font-family: "roboto";
 }
 .restaurants__box__card__info div {
   padding-left: 0.8rem;
 }
 .restaurants__box__card__info div p:first-child {
+  font-size: 1.3rem;
   margin-top: 0.5rem;
   font-weight: bold;
-  font-size: 1.2rem;
 }
 .restaurants__box__card__info div p:last-child {
   margin-top: -1rem;
   font-size: 1.1rem;
+  font-weight: normal;
 }
 .restaurants__box__card__info i {
   position: absolute;
